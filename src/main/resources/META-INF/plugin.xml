@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.xiaomiwujiecao.uniappmacrosupport</id>
-    <name>uniapp-macro-support</name>
+    <name>Uniapp-Macro-Support</name>
     <vendor>xiaomiwujiecao</vendor>
 
     <depends>com.intellij.modules.platform</depends>
@@ -10,6 +10,8 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow factoryClass="com.github.xiaomiwujiecao.uniappmacrosupport.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <annotator language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
+        <lang.foldingBuilder language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
     </extensions>
 
     <applicationListeners>
