@@ -3,12 +3,12 @@
     <id>com.github.xiaomiwujiecao.uniappmacrosupport</id>
     <name>Uniapp-Macro-Support</name>
     <vendor>xiaomiwujiecao</vendor>
-
     <depends>com.intellij.modules.platform</depends>
-
+    <depends>JavaScript</depends>
+    <depends>com.intellij.css</depends>
     <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
+        <javascript.webTypes source="web-types/alpine.web-types.json" enableByDefault="true"/>
         <toolWindow factoryClass="com.github.xiaomiwujiecao.uniappmacrosupport.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <annotator language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
         <lang.foldingBuilder language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
