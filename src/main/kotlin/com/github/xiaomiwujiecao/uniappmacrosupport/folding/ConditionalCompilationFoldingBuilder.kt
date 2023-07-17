@@ -8,10 +8,6 @@ import com.intellij.psi.PsiComment
 import com.intellij.psi.PsiElement
 import com.intellij.psi.util.PsiTreeUtil
 class ConditionalCompilationFoldingBuilder : FoldingBuilderEx() {
-    override fun isCollapsedByDefault(node: ASTNode): Boolean {
-        return false
-    }
-
     override fun buildFoldRegions(root: PsiElement, document: Document, quick: Boolean): Array<FoldingDescriptor> {
         val descriptors = mutableListOf<FoldingDescriptor>()
         val comments = PsiTreeUtil.findChildrenOfType(root, PsiComment::class.java)
@@ -19,7 +15,7 @@ class ConditionalCompilationFoldingBuilder : FoldingBuilderEx() {
         var startOffset = -1
         for (comment in comments) {
             val text = comment.text
-            if (text.contains("#ifdef",true) || text.contains("#ifndef",true)) {
+            if (text.contains("#ifdef", true) || text.contains("#ifndef", true)) {
                 startOffset = comment.textRange.startOffset
             } else if (text.contains("#endif")) {
                 if (startOffset != -1) {
@@ -36,6 +32,10 @@ class ConditionalCompilationFoldingBuilder : FoldingBuilderEx() {
 
     override fun getPlaceholderText(node: ASTNode): String? {
         return "..."
+    }
+
+    override fun isCollapsedByDefault(p0: ASTNode): Boolean {
+        TODO("Not yet implemented")
     }
 
     override fun getPlaceholderText(node: ASTNode, range: TextRange): String? {
