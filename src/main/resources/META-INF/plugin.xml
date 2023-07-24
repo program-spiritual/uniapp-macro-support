@@ -12,10 +12,6 @@
         <toolWindow factoryClass="com.github.xiaomiwujiecao.uniappmacrosupport.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
         <annotator language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
         <lang.foldingBuilder language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
-        <annotator language="JavaScript" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
-        <annotator language="TypeScript" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
-        <lang.foldingBuilder language="JavaScript" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
-        <lang.foldingBuilder language="TypeScript" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
     </extensions>
 
     <applicationListeners>
