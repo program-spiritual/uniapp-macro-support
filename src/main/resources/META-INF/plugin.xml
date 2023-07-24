@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.xiaomiwujiecao.uniappmacrosupport</id>
     <name>Uniapp-Macro-Support</name>
-    <vendor>xiaomiwujiecao</vendor>
+    <vendor email="xiaomiwujiecao@gmail.com" url="https://nodejs7.com">xiaomiwujiecao</vendor>
     <depends>com.intellij.modules.platform</depends>
     <depends>JavaScript</depends>
     <depends>com.intellij.css</depends>

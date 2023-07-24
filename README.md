@@ -17,8 +17,8 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-uniapp 宏定义的高亮支持插件.
-Highlighting support plugin for uniapp macro definitions.
+
+Highlighting support plugin for uni app macro definitions. if your comment line contains #ifdef , #ifndef , endif keyword etc. keyword line would be highlighted.
 <!-- Plugin description end -->
 
 ## Installation
