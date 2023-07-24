@@ -35,7 +35,7 @@ class ConditionalCompilationFoldingBuilder : FoldingBuilderEx() {
     }
 
     override fun isCollapsedByDefault(p0: ASTNode): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
     override fun getPlaceholderText(node: ASTNode, range: TextRange): String? {

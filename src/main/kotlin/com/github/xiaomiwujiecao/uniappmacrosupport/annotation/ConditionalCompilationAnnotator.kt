@@ -15,6 +15,7 @@ class ConditionalCompilationAnnotator : Annotator {
             val text = element.text
             // 检查是否是条件编译标记
             if (text.contains("#ifdef", true) || text.contains("#ifndef", true) || text.contains("#endif", true)) {
+                thisLogger().warn("matched:", RuntimeException(text.toString()))
                 // 设置高亮显示的文本属性
                 val attributes = TextAttributesKey.createTextAttributesKey("CONDITIONAL_COMPILATION")
                 holder.newSilentAnnotation(HighlightSeverity.INFORMATION)
