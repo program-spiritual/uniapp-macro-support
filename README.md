@@ -19,6 +19,28 @@
 <!-- Plugin description -->
 
 Highlighting support plugin for uni app macro definitions. if your comment line contains #ifdef , #ifndef , endif keyword etc. keyword line would be highlighted.
+
+### changelog 
+
+-- v0.0.6
+
+important update!!!
+
+my plugin support git commit for CN language, yes, this feature is translate from [Git Commit Template](https://plugins.jetbrains.com/plugin/index?xmlId=commit-template-idea-plugin&utm_source=product&utm_medium=link&utm_campaign=WS&utm_content=2023.2) 
+
+my plugin is mainly designed for CN developer. so , simple usage is very important .
+
+## Usage
+
+just click the red tiny icon .
+
+![Commit-step1](static/step1.png)
+
+select the option and input your change text ,and click confirm button.
+
+![Commit-step2](static/step2.png)
+
+
 <!-- Plugin description end -->
 
 ## Installation
