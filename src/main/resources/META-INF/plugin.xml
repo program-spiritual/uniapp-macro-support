@@ -6,11 +6,20 @@
     <depends>com.intellij.modules.platform</depends>
     <depends>JavaScript</depends>
     <depends>com.intellij.css</depends>
+    <depends>com.intellij.modules.vcs</depends>
     <resource-bundle>messages.MyBundle</resource-bundle>
     <extensions defaultExtensionNs="com.intellij">
         <annotator language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.annotation.ConditionalCompilationAnnotator"/>
         <lang.foldingBuilder language="" implementationClass="com.github.xiaomiwujiecao.uniappmacrosupport.folding.ConditionalCompilationFoldingBuilder" />
     </extensions>
+    <actions>
+        <action id="com.github.vj.tools" class="com.github.vj.tools.CreateCommitAction"
+                text="创建提交"
+                description="Create commit message"
+                icon="/icons/dialog.png">
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
+        </action>
+    </actions>
     <applicationListeners>
     </applicationListeners>
 </idea-plugin>
