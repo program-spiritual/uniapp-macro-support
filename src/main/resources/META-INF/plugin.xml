@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.github.xiaomiwujiecao.uniappmacrosupport</id>
     <name>Uniapp-Macro-Support</name>
-    <vendor email="xiaomiwujiecao@gmail.com" url="https://nodejs7.com">xiaomiwujiecao</vendor>
+    <vendor email="xiaomiwujiecao@gmail.com" url="https://github.com/xiaomiwujiecao/uniapp-macro-support">uniapp-macro-support</vendor>
     <depends>com.intellij.modules.platform</depends>
     <depends>JavaScript</depends>
     <depends>com.intellij.css</depends>
@@ -14,7 +14,7 @@
     </extensions>
     <actions>
         <action id="com.github.vj.tools" class="com.github.vj.tools.CreateCommitAction"
-                text="创建提交"
+                text="Create Commit Message"
                 description="Create commit message"
                 icon="/icons/dialog.png">
             <add-to-group group-id="Vcs.MessageActionGroup" anchor="first"/>
